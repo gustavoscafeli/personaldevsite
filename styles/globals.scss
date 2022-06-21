@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+@import url(//db.onlinewebfonts.com/c/55d433372d270829c51e2577a78ef12d?family=Monument+Extended);
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: #e8ecec;
+}
+
+.container {
+  @media (min-width: 1366px) {
+    max-width: 90%;
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  position: -webkit-sticky;
+  .container {
+    border-bottom: 2px solid;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    padding: 20px 0;
+    font-weight: 500;
+
+    ul {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      gap: 40px;
+      li {
+        list-style: none;
+        display: inline-block;
+      }
+    }
+  }
+}
+
+.hero {
+  h1 {
+    font-size: 100px;
+    text-transform: uppercase;
+    font-family: "Monument Extended";
+  }
+  .container {
+    padding: 60px 0;
+    border-bottom: 2px solid;
+  }
+}
+
+.header-page {
+  h2 {
+    font-size: 45px;
+    text-transform: uppercase;
+    padding: 40px 0;
+    line-height: 1;
+  }
+  border-bottom: 2px solid;
+}
+
+.divider {
+  width: 100%;
+  height: 2px;
+  background: #000;
+}
+
+.heading-section {
+  padding: 50px 0;
+  border-bottom: 2px solid;
+
+  h2 {
+    text-transform: uppercase;
+    font-size: 32px;
+    line-height: 1;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.project {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.menu__item {
+  position: relative;
+  padding: 40px 0;
+}
+
+.menu__item-link {
+  display: inline-block;
+  cursor: progress;
+  position: relative;
+  color: #fff;
+  -webkit-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+  font-family: "Monument Extended";
+  text-transform: uppercase;
+}
+
+.menu__item-link::before {
+  all: initial;
+  text-transform: uppercase;
+  counter-increment: menu;
+  position: absolute;
+  bottom: 60%;
+  left: 0;
+  pointer-events: none;
+}
+
+.menu__item-link:hover {
+  -webkit-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+  opacity: 0;
+}
+
+.menu__item-img {
+  pointer-events: none;
+  position: absolute;
+  height: 50vh;
+  max-height: 400px;
+  opacity: 0;
+  left: 100%;
+  top: 50%;
+  -webkit-transform: translate3d(calc(-100% - 6vw), -30%, 0)
+    translate3d(0, 20px, 0);
+  transform: translate3d(calc(-100% - 6vw), -30%, 0) translate3d(0, 20px, 0);
+}
+
+.menu__item-link:hover + .menu__item-img {
+  opacity: 1;
+  -webkit-transform: translate3d(calc(-100% - 6vw), -30%, 0)
+    rotate3d(0, 0, 1, 4deg);
+  transform: translate3d(calc(-100% - 6vw), -30%, 0) rotate3d(0, 0, 1, 4deg);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.menu {
+  padding: 0vh 0 0 0vh;
+  --offset: 20vw;
+  --move-initial: calc(-25% + var(--offset));
+  --move-final: calc(-50% + var(--offset));
+  font-size: 4vw;
+}
+
+.marquee {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  color: #fff;
+  pointer-events: none;
+  mix-blend-mode: difference;
+}
+
+.marquee__inner {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-animation: marquee 5s linear infinite;
+  animation: marquee 5s linear infinite;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+  opacity: 0;
+  -webkit-transition: opacity 0.1s;
+  transition: opacity 0.1s;
+  padding: 2vw 0;
+}
+
+.menu__item-link:hover ~ .marquee .marquee__inner {
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+  opacity: 1;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+.menu__item-link,
+.marquee span {
+  white-space: nowrap;
+  font-size: 4vw;
+  padding: 1.6vw 1vw;
+  font-weight: 900;
+}
+
+.marquee span {
+  font-family: "Monument Extended";
+  text-transform: uppercase;
+}
+
+@-webkit-keyframes marquee {
+  0% {
+    -webkit-transform: translate3d(var(--move-initial), 0, 0);
+    transform: translate3d(var(--move-initial), 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(var(--move-final), 0, 0);
+    transform: translate3d(var(--move-final), 0, 0);
+  }
+}
+
+@keyframes marquee {
+  0% {
+    -webkit-transform: translate3d(var(--move-initial), 0, 0);
+    transform: translate3d(var(--move-initial), 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(var(--move-final), 0, 0);
+    transform: translate3d(var(--move-final), 0, 0);
+  }
+}
