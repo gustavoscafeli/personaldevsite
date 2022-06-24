@@ -66,21 +66,21 @@ export default function WorkList() {
 
           <div className="clients-list">
             <h3>
-              Anonimatta <i class="fa-solid fa-circle"></i> Universidade Federal
-              do Rio de Janeiro <i class="fa-solid fa-circle"></i> Adidas{" "}
-              <i class="fa-solid fa-circle"></i> Attech
+              Anonimatta <i className="fa-solid fa-circle"></i> Universidade
+              Federal do Rio de Janeiro <i className="fa-solid fa-circle"></i>{" "}
+              Adidas <i className="fa-solid fa-circle"></i> Attech
             </h3>
 
             <h3>
-              Residencial do Marquês <i class="fa-solid fa-circle"></i> MCP
-              Performance <i class="fa-solid fa-circle"></i> OLGA Music{" "}
-              <i class="fa-solid fa-circle"></i> CFB7 Brasil
+              Residencial do Marquês <i className="fa-solid fa-circle"></i> MCP
+              Performance <i className="fa-solid fa-circle"></i> OLGA Music{" "}
+              <i className="fa-solid fa-circle"></i> CFB7 Brasil
             </h3>
 
             <h3>
-              Academia Be Fit <i class="fa-solid fa-circle"></i> Martinica
-              Digital <i class="fa-solid fa-circle"></i> Big Brain Education{" "}
-              <i class="fa-solid fa-circle"></i> RR Makeup
+              Academia Be Fit <i className="fa-solid fa-circle"></i> Martinica
+              Digital <i className="fa-solid fa-circle"></i> Big Brain Education{" "}
+              <i className="fa-solid fa-circle"></i> RR Makeup
             </h3>
           </div>
         </section>
