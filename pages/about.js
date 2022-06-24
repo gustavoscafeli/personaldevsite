@@ -2,7 +2,7 @@ import Header from "../components/header";
 
 export default function About() {
   return (
-    <>
+    <div className="about-page">
       <Header />
       <div className="container">
         <div className="header-page">
@@ -11,16 +11,16 @@ export default function About() {
 
         <div className="row d-flex align-items-center">
           <div className="col-md-6">
-            <img src="https://images.unsplash.com/photo-1548030415-e1eb1c684c9b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" />
+            <img className="about-img" src="/about.jpg" />
           </div>
           <div className="col-md-6">
             <h3>Links</h3>
 
-            <ul>
+            <ul className="about-links">
               <li>
                 Twitter:{" "}
                 <a
-                  href="https://linkedin.com/in/gustavoscafeli"
+                  href="https://twitter.com/gustavoscafeli"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -30,21 +30,11 @@ export default function About() {
               <li>
                 Github:{" "}
                 <a
-                  href="https://linkedin.com/in/gustavoscafeli"
+                  href="https://github.com/gustavoscafeli"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   @gustavoscafeli
-                </a>
-              </li>
-              <li>
-                Website:{" "}
-                <a
-                  href="https://linkedin.com/in/gustavoscafeli"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  https://scafeli.com
                 </a>
               </li>
               <li>
@@ -65,7 +55,7 @@ export default function About() {
             </p>
 
             <p className="lead">
-              I'm currently building{" "}
+              I&apos;m currently building{" "}
               <a href="https://zapily.com.br" target="_blank" rel="noreferrer">
                 Zapily
               </a>
@@ -82,6 +72,6 @@ export default function About() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }

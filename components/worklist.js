@@ -1,22 +1,22 @@
 export default function WorkList() {
   const worklist = [
     {
-      name: "Zapily",
-      url: "work/disneyplus",
+      name: "Disney+",
+      url: "work/zapily",
       description: "Worklist 1 description",
       photo: "disneyplus.png",
     },
     {
       name: "Pokédex",
-      url: "work/disneyplus",
+      url: "work/pokedex",
       description: "Worklist 1 description",
-      photo: "disneyplus.png",
+      photo: "pokemon.png",
     },
     {
       name: "Movier",
       url: "work/movier",
       description: "Worklist 1 description",
-      photo: "disneyplus.png",
+      photo: "movier.png",
     },
     // {
     //   name: "oimenu",
@@ -47,7 +47,6 @@ export default function WorkList() {
                           <span>{worklist.name}</span>
                           <span>{worklist.name}</span>
                           <span>{worklist.name}</span>
-                          <span>{worklist.name}</span>
                         </div>
                       </div>
                     </div>
@@ -65,12 +64,23 @@ export default function WorkList() {
             <h2>Clients</h2>
           </div>
 
-          <div className="">
+          <div className="clients-list">
             <h3>
-              Anonimatta, Universidade Federal do Rio de Janeiro, Adidas,
-              Attech, Residencial do Marquês, MCP Performance, OLGA Music, CFB7
-              Brasil, Academia Be Fit, Martinica Digital, Big Brain Education,
-              RR Makeup
+              Anonimatta <i class="fa-solid fa-circle"></i> Universidade Federal
+              do Rio de Janeiro <i class="fa-solid fa-circle"></i> Adidas{" "}
+              <i class="fa-solid fa-circle"></i> Attech
+            </h3>
+
+            <h3>
+              Residencial do Marquês <i class="fa-solid fa-circle"></i> MCP
+              Performance <i class="fa-solid fa-circle"></i> OLGA Music{" "}
+              <i class="fa-solid fa-circle"></i> CFB7 Brasil
+            </h3>
+
+            <h3>
+              Academia Be Fit <i class="fa-solid fa-circle"></i> Martinica
+              Digital <i class="fa-solid fa-circle"></i> Big Brain Education{" "}
+              <i class="fa-solid fa-circle"></i> RR Makeup
             </h3>
           </div>
         </section>
