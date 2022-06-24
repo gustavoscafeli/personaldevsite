@@ -101,13 +101,14 @@ header {
 
 .menu__item-link {
   display: inline-block;
-  cursor: progress;
+  cursor: pointer;
   position: relative;
   color: #fff;
   -webkit-transition: opacity 0.4s;
   transition: opacity 0.4s;
   font-family: "Monument Extended";
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .menu__item-link::before {
@@ -224,5 +225,12 @@ header {
   100% {
     -webkit-transform: translate3d(var(--move-final), 0, 0);
     transform: translate3d(var(--move-final), 0, 0);
+  }
+}
+
+.work-page {
+  padding: 60px 0;
+  img {
+    max-width: 100%;
   }
 }

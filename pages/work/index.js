@@ -14,8 +14,9 @@ export default function Work() {
         <div className="row">
           <div className="col-md-6">
             <p className="lead">
-              I'm a UI developer based in Rio de Janeiro. I'm interested in
-              design systems, web3, user/dev experience and under engineering.
+              I&apos;m a UI developer based in Rio de Janeiro. I&apos;m
+              interested in design systems, web3, user/dev experience and under
+              engineering.
             </p>
 
             <p className="lead">

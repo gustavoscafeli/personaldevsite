@@ -15,13 +15,20 @@ export default function About() {
           </div>
           <div className="col-md-6">
             <p className="lead">
-              I'm a UI developer based in Rio de Janeiro. I'm interested in
-              design systems, web3, user/dev experience and under engineering.
+              Im a UI developer based in Rio de Janeiro. Im interested in design
+              systems, web3, user/dev experience and under engineering.
             </p>
 
             <p className="lead">
-              I'm currently building <a href="/">oicatálogo</a> to help small
-              busineses to expand .
+              Im currently building{" "}
+              <a
+                href="https://oicatalogo.com.br"
+                target="_blank"
+                rel="noreferrer"
+              >
+                oicatálogo
+              </a>{" "}
+              to help small busineses to expand.
             </p>
 
             <p className="lead">

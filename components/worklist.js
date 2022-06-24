@@ -1,83 +1,61 @@
 export default function WorkList() {
+  const worklist = [
+    {
+      name: "Disney+",
+      url: "work/disneyplus",
+      description: "Worklist 1 description",
+      photo: "disneyplus.png",
+    },
+    {
+      name: "MCP Performance",
+      url: "work/disneyplus",
+      description: "Worklist 1 description",
+      photo: "disneyplus.png",
+    },
+    {
+      name: "Disney+",
+      url: "work/disneyplus",
+      description: "Worklist 1 description",
+      photo: "disneyplus.png",
+    },
+    {
+      name: "Disney+",
+      url: "work/disneyplus",
+      description: "Worklist 1 description",
+      photo: "disneyplus.png",
+    },
+  ];
   return (
     <>
       <div className="container">
-        <section class="project">
-          <div class="project-container">
+        <section className="project">
+          <div className="project-container">
             <div>
-              <nav class="menu">
-                <div class="menu__item">
-                  <a class="menu__item-link">/ oicatálogo</a>
-                  <img class="menu__item-img" src="projetomed.jpg" />
-                  <div class="marquee">
-                    <div class="marquee__inner">
-                      <span>oicatálogo</span>
-                      <span>oicatálogo</span>
-                      <span>oicatálogo</span>
-                      <span>oicatálogo</span>
+              <nav className="menu">
+                {worklist.map((worklist) => (
+                  <>
+                    <div className="menu__item">
+                      <a href={`/${worklist.url}`} className="menu__item-link">
+                        / {worklist.name}
+                      </a>
+                      <img
+                        className="menu__item-img"
+                        src={worklist.photo}
+                        alt={worklist.name}
+                      />
+                      <div className="marquee">
+                        <div className="marquee__inner">
+                          <span>{worklist.name}</span>
+                          <span>{worklist.name}</span>
+                          <span>{worklist.name}</span>
+                          <span>{worklist.name}</span>
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                </div>
 
-                <div class="divider"></div>
-
-                <div class="menu__item">
-                  <a class="menu__item-link">/ Projeto Med</a>
-                  <img class="menu__item-img" src="projetomed.jpg" />
-                  <div class="marquee">
-                    <div class="marquee__inner">
-                      <span>Projeto Med</span>
-                      <span>Projeto Med</span>
-                      <span>Projeto Med</span>
-                      <span>Projeto Med</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="divider"></div>
-
-                <div class="menu__item">
-                  <a class="menu__item-link">/ Disney Plus</a>
-                  <img class="menu__item-img" src="disneyplus.png" />
-                  <div class="marquee">
-                    <div class="marquee__inner">
-                      <span>Disney+</span>
-                      <span>Disney+</span>
-                      <span>Disney+</span>
-                      <span>Disney+</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="divider"></div>
-
-                <div class="menu__item">
-                  <a class="menu__item-link">/ Scafeli Jeans</a>
-                  <img class="menu__item-img" src="scafeli.png" />
-                  <div class="marquee">
-                    <div class="marquee__inner">
-                      <span>Scafeli Jeans</span>
-                      <span>Scafeli Jeans</span>
-                      <span>Scafeli Jeans</span>
-                      <span>Scafeli Jeans</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="divider"></div>
-
-                <div class="menu__item">
-                  <a class="menu__item-link">/ Anonimatta</a>
-                  <img class="menu__item-img" src="images/project-five.jpeg" />
-                  <div class="marquee">
-                    <div class="marquee__inner" aria-hidden="true">
-                      <span>Anonimatta</span>
-                      <span>Anonimatta</span>
-                      <span>Anonimatta</span>
-                      <span>Anonimatta</span>
-                    </div>
-                  </div>
-                </div>
+                    <div className="divider"></div>
+                  </>
+                ))}
               </nav>
             </div>
           </div>
