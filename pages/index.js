@@ -13,8 +13,8 @@ export default function Home() {
       <div className="hero">
         <div className="container">
           <h1>
-            Im Gustavo Souza
-            <br /> Frontend Developer
+            I&apos;m Gustavo Scafeli
+            <br /> Software Developer
             <br /> based in Rio.
           </h1>
         </div>

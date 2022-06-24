@@ -1,29 +1,29 @@
 export default function WorkList() {
   const worklist = [
     {
-      name: "Disney+",
+      name: "Zapily",
       url: "work/disneyplus",
       description: "Worklist 1 description",
       photo: "disneyplus.png",
     },
     {
-      name: "MCP Performance",
+      name: "Pokédex",
       url: "work/disneyplus",
       description: "Worklist 1 description",
       photo: "disneyplus.png",
     },
     {
-      name: "Disney+",
-      url: "work/disneyplus",
+      name: "Movier",
+      url: "work/movier",
       description: "Worklist 1 description",
       photo: "disneyplus.png",
     },
-    {
-      name: "Disney+",
-      url: "work/disneyplus",
-      description: "Worklist 1 description",
-      photo: "disneyplus.png",
-    },
+    // {
+    //   name: "oimenu",
+    //   url: "work/disneyplus",
+    //   description: "Worklist 1 description",
+    //   photo: "disneyplus.png",
+    // },
   ];
   return (
     <>
@@ -35,9 +35,7 @@ export default function WorkList() {
                 {worklist.map((worklist) => (
                   <>
                     <div className="menu__item">
-                      <a href={`/${worklist.url}`} className="menu__item-link">
-                        / {worklist.name}
-                      </a>
+                      <a className="menu__item-link">/ {worklist.name}</a>
                       <img
                         className="menu__item-img"
                         src={worklist.photo}
@@ -45,6 +43,7 @@ export default function WorkList() {
                       />
                       <div className="marquee">
                         <div className="marquee__inner">
+                          <span>{worklist.name}</span>
                           <span>{worklist.name}</span>
                           <span>{worklist.name}</span>
                           <span>{worklist.name}</span>

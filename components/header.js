@@ -24,7 +24,7 @@ export default function Header() {
         <div className="container">
           <div>
             <Link href="/">
-              <a>Gustavo Souza</a>
+              <a>Scafeli</a>
             </Link>
           </div>
           <div>

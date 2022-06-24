@@ -1,6 +1,6 @@
 import Header from "../../components/header";
 
-export default function DisneyPlus() {
+export default function Movier() {
   return (
     <>
       <Header />
@@ -9,8 +9,8 @@ export default function DisneyPlus() {
         <div className="container">
           <div className="row">
             <div className="col-md-6">
-              <p>LANDING PAGE</p>
-              <h2>Luca, Disney+</h2>
+              <p>IMBD API</p>
+              <h2>Movier</h2>
             </div>
             <div className="col-md-6">
               <img src="/disneyplus.png" alt="Disney+" />
